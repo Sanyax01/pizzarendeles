@@ -18,7 +18,7 @@
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ListBox.Background>
         </ListBox>
-        <TextBox x:Name="tbox_hozzadas" TextAlignment="Center" HorizontalAlignment="Left" Margin="435,10,0,0" TextWrapping="Wrap" Text="Új pizza" VerticalAlignment="Top" Width="335" Height="49">
+        <TextBox x:Name="tbox_hozzadas" TextAlignment="Center" HorizontalAlignment="Left" Margin="444,10,0,0" TextWrapping="Wrap" Text="Új pizza" VerticalAlignment="Top" Width="346" Height="49">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </TextBox.Background>

@@ -72,22 +72,22 @@ namespace pizza
         {
             if (tbox_kivalasztott.Text != "")
             {
-                if (tbox_meret.Text == "kicsi")
+                if (tbox_meret.Text.ToLower() == "kicsi")
                 {  
-                    rendelt.Add(tbox_kivalasztott.Text + " - " + tbox_meret.Text);
-                    lbox_rendelesek.ItemsSource = rendelt;
+                    rendelt.Add(tbox_kivalasztott.Text.ToString() + " - " + tbox_meret.Text.ToString());
+                    lbox_rendelesek.Items.Add(tbox_kivalasztott.Text + " - " + tbox_meret.Text);
                     lbox_pizza.Items.Refresh();
                 }
-                if (tbox_meret.Text == "közepes")
+                if (tbox_meret.Text.ToLower() == "közepes")
                 { 
                     rendelt.Add(tbox_kivalasztott.Text + " - " + tbox_meret.Text);
-                    lbox_rendelesek.ItemsSource = rendelt;
+                    lbox_rendelesek.Items.Add(tbox_kivalasztott.Text + " - " + tbox_meret.Text);
                     lbox_pizza.Items.Refresh();
                 }
-                if (tbox_meret.Text == "nagy")
+                if (tbox_meret.Text.ToLower() == "nagy")
                 { 
                     rendelt.Add(tbox_kivalasztott.Text + " - " + tbox_meret.Text);
-                    lbox_rendelesek.ItemsSource = rendelt;
+                    lbox_rendelesek.Items.Add(tbox_kivalasztott.Text + " - " + tbox_meret.Text);
                     lbox_pizza.Items.Refresh();
                 }
                 else
